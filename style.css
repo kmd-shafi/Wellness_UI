@@ -1,0 +1,154 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.logohero {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgb(0, 150, 150);
+  font-family: inherit;
+  padding-bottom: 20px;
+}
+
+.lable {
+  font-size: medium;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.inputbox {
+  width: 100%;
+  padding: 10px;
+  border: 1.8px solid gray;
+  border-radius: 10px;
+  margin: 5px 0px 20px;
+  box-sizing: border-box;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.form-container {
+  width: 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.login {
+  width: 100%;
+  padding: 10px;
+  border: 1.8px solid gray;
+  border-radius: 10px;
+  margin: 20px 0px 20px;
+  background-color: rgb(0, 150, 150);
+  color: white;
+}
+
+.google {
+  width: 100%;
+  padding: 10px;
+  border: 1.8px solid gray;
+  border-radius: 10px;
+  margin: 5px 0px 20px;
+  color: gray;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.accountDetails {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.backgroundimg {
+  padding-left: auto;
+  padding-bottom: 850px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  position: relative;
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 150, 150, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 50%
+    ),
+    url(pexels-photo-1199590.webp);
+}
+
+.backgroundheading {
+  position: absolute;
+  bottom: 100px;
+  width: auto;
+  color: white;
+  padding-left: 20px;
+}
+.backgroundpara {
+  position: absolute;
+  bottom: 40px;
+  width: auto;
+  color: white;
+  padding-left: 20px;
+}
+
+@media (max-width: 1200px) {
+  .grid2 {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .logohero {
+    justify-content: center;
+  }
+
+  #heading {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    display: flex;
+    align-items: center;
+    min-height: 0%;
+  }
+}
